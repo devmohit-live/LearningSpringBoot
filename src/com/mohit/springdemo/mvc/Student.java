@@ -7,7 +7,7 @@ public class Student {
 	private String firstName, lastName;
 	private String country;
 	private LinkedHashMap<String, String> countryOptions;
-	
+	private String favouriteLanguage; //this can also e done in second way using LinkedHashMap
 	
 	public Student() {
 		this.countryOptions = new LinkedHashMap<String, String>();
@@ -39,4 +39,12 @@ public class Student {
 	public LinkedHashMap<String, String> getCountryOptions() {
 		return countryOptions;
 	}
+	public String getFavouriteLanguage() {
+		return favouriteLanguage;
+	}
+	public void setFavouriteLanguage(String favouriteLanguage) {
+		this.favouriteLanguage = favouriteLanguage;
+	}
+	
+	
 }

@@ -37,6 +37,13 @@ Country :
 
 <form:options items="${student.countryOptions}"/>
 </form:select>
+
+
+	Java<form:radiobutton path="favouriteLanguage" value="Java"/>
+	Python<form:radiobutton path="favouriteLanguage" value="Python"/>
+	Dart<form:radiobutton path="favouriteLanguage" value="Dart"/>
+	C<form:radiobutton path="favouriteLanguage" value="C"/>
+
   <input type="submit" value="Submit"/>
 </form:form>
 
