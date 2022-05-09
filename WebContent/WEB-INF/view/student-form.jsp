@@ -36,15 +36,26 @@ Country :
 <!-- Second Option using properties of class/model itself -->
 
 <form:options items="${student.countryOptions}"/>
+
 </form:select>
 
-
+<br><br>
+Fav Language :  	
 	Java<form:radiobutton path="favouriteLanguage" value="Java"/>
 	Python<form:radiobutton path="favouriteLanguage" value="Python"/>
 	Dart<form:radiobutton path="favouriteLanguage" value="Dart"/>
 	C<form:radiobutton path="favouriteLanguage" value="C"/>
 
+
+<br><br>
+OS worked On :
+Fedora Linux <form:checkbox path="operatingSystems" value="Fedora Linux"/> <br>
+Windows <form:checkbox path="operatingSystems" value="Windows"/> <br>
+MAC <form:checkbox path="operatingSystems" value="Mac OS"/> <br>
+Debian Linux <form:checkbox path="operatingSystems" value="Debian Linux"/> <br>
+
   <input type="submit" value="Submit"/>
+  
 </form:form>
 
 
