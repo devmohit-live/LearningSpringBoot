@@ -19,9 +19,12 @@ public class Customer {
 	//Error: n white spaces can paas this check
 	private String lastName;
 	
+	
+	@NotNull(message = "is mandatory") // can't apply to int type as null in not supprted by int
 	@Min(value=0, message = "must be greater than or equal to 0")
 	@Max(value = 10, message = "must be less than or equals to 10")
-	private int freePasses;
+	private Integer freePasses;
+//	private int freePasses;
 	
 	@NotNull(message = "is mandatory")
 	@Pattern(regexp ="^[a-zA-Z0-9]{5}", message = "Invalid Postal Code, must be a 5 digit chars/numbers")
@@ -43,11 +46,11 @@ public class Customer {
 		this.lastName = lastName;
 	}
 
-	public int getFreePasses() {
+	public Integer getFreePasses() {
 		return freePasses;
 	}
 
-	public void setFreePasses(int freePasses) {
+	public void setFreePasses(Integer freePasses) {
 		this.freePasses = freePasses;
 	}
 
