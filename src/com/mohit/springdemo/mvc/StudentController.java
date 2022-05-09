@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/student")
 public class StudentController {
 
-	@RequestMapping("/showForm")
+	@RequestMapping("showForm")
 	public String showForm(Model model) {
 		//create student
 		Student student = new Student();

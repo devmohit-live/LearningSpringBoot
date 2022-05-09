@@ -8,5 +8,11 @@
 <br>
 <br>
 <a href="student/showForm">Student Form Page : </a>
+
+<br>
+<br>
+<a href="customer/showForm">Customer Form Page : </a>
+
+
 </body>
 </html>
