@@ -11,6 +11,7 @@ public class Customer {
 	
 	@NotNull(message="is required")
 	@Size(min=2, message = "is required")
+	//Error: n white spaces can paas this check
 	private String lastName;
 
 	public String getFirstName() {
