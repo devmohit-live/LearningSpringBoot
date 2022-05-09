@@ -29,7 +29,8 @@ public class CustomerController {
 	public String processForm(@Valid @ModelAttribute("customer") Customer customer, BindingResult bindingResult) {
 		
 		//debug/logging
-		System.out.println("Last Name | "+customer.getLastName()+" | ");
+//		System.out.println("Last Name | "+customer.getLastName()+" | ");
+		System.out.println(bindingResult);
 				
 		if(bindingResult.hasErrors())
 			return "customer-form"; //go back 
