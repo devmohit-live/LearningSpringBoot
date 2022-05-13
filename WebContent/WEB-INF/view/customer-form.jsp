@@ -45,6 +45,15 @@
 			<form:errors path="courseCode" cssClass="error"/> 
 			<br>
 			
+			
+			<br>
+			<br>
+			
+			Course Code 2 : <form:input path="courseCode2" />
+						
+			<form:errors path="courseCode2" cssClass="error"/> 
+			<br>
+			
 			<input type="submit" value="submit">
 			<br>
 			

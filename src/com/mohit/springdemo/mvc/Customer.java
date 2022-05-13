@@ -7,6 +7,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import com.mohit.springdemo.mvc.validation.CourseCode;
+import com.mohit.springdemo.mvc.validation.MultipleCourse;
 
 
 public class Customer {
@@ -35,6 +36,10 @@ public class Customer {
 	
 	@CourseCode(value = "MS", message = "must start woth MS")
 	private String courseCode;
+	
+	
+	@MultipleCourse
+	private String courseCode2;
 	
 
 	public String getFirstName() {
@@ -75,6 +80,14 @@ public class Customer {
 
 	public void setCourseCode(String courseCode) {
 		this.courseCode = courseCode;
+	}
+
+	public String getCourseCode2() {
+		return courseCode2;
+	}
+
+	public void setCourseCode2(String courseCode2) {
+		this.courseCode2 = courseCode2;
 	}
 	
 	

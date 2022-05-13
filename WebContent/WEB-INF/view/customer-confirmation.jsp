@@ -18,5 +18,10 @@
 	<br>
 	<br>
 	Course Code : ${customer.courseCode}
+	
+	<br>
+	<br>
+	Course Code : ${customer.courseCode2}
+	
 	</body>
 </html>
