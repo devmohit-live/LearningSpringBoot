@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.mohit.springdemo.mvc.validation.CourseCode;
+
 
 public class Customer {
 
@@ -29,6 +31,11 @@ public class Customer {
 	@NotNull(message = "is mandatory")
 	@Pattern(regexp ="^[a-zA-Z0-9]{5}", message = "Invalid Postal Code, must be a 5 digit chars/numbers")
 	private String postalCode;
+	
+	
+	@CourseCode(value = "MS", message = "must start woth MS")
+	private String courseCode;
+	
 
 	public String getFirstName() {
 		return firstName;
@@ -60,6 +67,14 @@ public class Customer {
 
 	public void setPostalCode(String postalCode) {
 		this.postalCode = postalCode;
+	}
+
+	public String getCourseCode() {
+		return courseCode;
+	}
+
+	public void setCourseCode(String courseCode) {
+		this.courseCode = courseCode;
 	}
 	
 	
